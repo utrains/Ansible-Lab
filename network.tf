@@ -6,7 +6,7 @@ resource "aws_vpc" "lab_vpc" {
   enable_dns_support   = "true" #gives you an internal domain name
   enable_dns_hostnames = "true" #gives you an internal host name
   instance_tenancy     = "default"
-  
+
   tags = {
     Name = "${var.project-name}-VPC"
   }
